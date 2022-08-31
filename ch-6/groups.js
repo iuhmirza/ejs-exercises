@@ -9,7 +9,7 @@ class Group {
       this.content.push(value);
     }
     delete(value) {
-        this.content.splice(this.content.indexOf(value));
+        this.content.splice(this.content.indexOf(value), 1);
     }
     has(value) {
       for(let member of this.content) {
